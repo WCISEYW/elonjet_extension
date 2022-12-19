@@ -1,0 +1,28 @@
+{
+    "manifest_version": 2,
+    "name": "elonjet",
+    "version": "1.0",
+  
+    "description": "Replaces Elon Musk's twitter header photo by the real time location of his jet.",
+  
+    "icons": {
+        "48": "icons/elonjet-48.png",
+        "96": "icons/elonjet-96.png"
+    },
+  
+    "content_scripts": 
+    [
+      {
+        "matches": ["*://twitter.com/*"],
+        "js": ["elonjet.js"],
+        "all_frames": true
+      },
+  
+      {
+        "matches": ["*://globe.adsbexchange.com/*"],
+        "js": ["removeUI.js"],
+        "all_frames": true
+      }
+    ]  
+  }
+  
