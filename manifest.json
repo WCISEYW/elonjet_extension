@@ -1,7 +1,7 @@
 {
-    "manifest_version": 2,
+    "manifest_version": 3,
     "name": "elonjet",
-    "version": "1.0",
+    "version": "1.11",
   
     "description": "Replaces Elon Musk's twitter header photo by the real time location of his jet.",
   
